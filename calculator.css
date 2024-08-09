@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+}
+.maincontainer::before{
+    position: absolute;
+    content: "";
+    background-color: black;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/*First Column*/ 
+
+.maincontainer{
+    display: flex;
+}
+.head h1 {
+    margin: 20px 20px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    color: white;
+}
+.head p{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 0px;
+}
+.head .answer{
+    position: relative;
+    margin-top: 80px;
+    color:Red;
+    font-size: 30px;
+}
+.head input{
+    position: relative;
+    top: 20px;
+    left: 100px;
+}
+
+/*Second Column*/
+
+.body{
+    margin: 20px auto;
+    height: 20%;
+    width: 30%;
+}
+.body .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body .input input,.head input {
+    width:360px;
+    height: 80px;
+    font-size: 40px;
+    text-align: right;
+    margin-bottom: 40px;
+    background-color: rgb(210, 197, 197);
+    box-shadow: white 2px 2px 2px;
+}
+.body #mainsymbol .btn{
+    font-weight: bold;
+    color: white;
+    background-color: rgb(15, 183, 195);
+}
+.body .button {
+    display: flex;
+    position: relative;
+    margin: 8px;
+    gap: 15px;
+}
+.body .button .btn {
+    height: 60px;
+    width: 60px;
+    font-size: 25px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    border: 2px solid white;
+}
+.body .button #othersymbol{
+    color:white;
+    font-weight: bold;
+    background-color: rgb(15, 183, 195);
+}
+.body .button .btn:hover{
+    border: 2px solid  rgb(15, 183, 195);
+}
+.body .container .hidebtn{
+    color: white;
+    background: #000;
+}
